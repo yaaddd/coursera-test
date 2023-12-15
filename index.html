@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Responsive Page</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    margin: 20px;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: #e0e0e0;
+}
+
+.title {
+   position:relative;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-bottom-left-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .box {
+        width: 48%;
+        margin-right: 4%;
+    }
+}
+
+@media (min-width: 992px) {
+    .box {
+        width: 31%;
+        margin-right: 2%;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> Our Menu</h1>
+        </header>
+        <section class="box">
+            <div class="title">Chicken</div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, earum totam quia qui repellat neque reprehenderit, tempora asperiores modi, eaque officia praesentium vel natus doloribus. Veritatis quis quidem consequuntur eos temporibus voluptas quibusdam voluptatem nemo obcaecati officia? Fuga sapiente laboriosam consequatur animi voluptas, adipisci eos maiores a, qui accusantium rerum.</p>
+        </section>
+        <section class="box">
+            <div class="title">Beef</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in vitae, doloribus voluptatibus ratione sit, a molestias quas nobis aspernatur odit voluptate veniam culpa repellat excepturi officia rerum esse laborum sunt, hic qui amet? Amet, necessitatibus! Vero, sit, omnis assumenda id labore commodi officia, nam impedit totam quis culpa fugiat!.</p>
+        </section>
+        <section class="box">
+            <div class="title">Sushi</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim accusamus officiis omnis quasi. Tenetur maiores quasi necessitatibus facilis eveniet dignissimos dolore perferendis possimus aperiam autem aspernatur veritatis eum excepturi quos aliquid, quae et similique perspiciatis velit corrupti, molestiae repellat. Explicabo pariatur magni aspernatur in molestias commodi velit ipsa dolore!</p>
+        </section>
+    </div>
+</body>
+</html>
